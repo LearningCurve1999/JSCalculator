@@ -24,7 +24,7 @@ body {
     margin: 0;
 }
 
-#calculator {
+.calculator {
     display: grid;
     justify-content: center;
     align-content: center;
@@ -33,7 +33,7 @@ body {
     grid-template-rows: minmax(120px, auto) repeat(5, 100px);
 }
 
-#calculator>button {
+.calculator>button {
     cursor: pointer;
     font-size: 2rem;
     border: 1px solid black;
@@ -42,15 +42,15 @@ body {
 }
 
 
-#calculator>button:hover {
+.calculator>button:hover {
     background-color: aquamarine
 }
 
-#allClear {
+.allClear {
     grid-column: span 2;
 }
 
-#output {
+.output {
     /* Which essentially tells us to go for the first column all the way to the last column -1 */
     grid-column: 1/-1;
     color: aliceblue;
@@ -65,12 +65,12 @@ body {
 }
 
 
-#output #previousOperand {
+.output #previousOperand {
     color: rgba(255, 255, 255, .75);
     font-size: 1.5rem;
 }
 
-#output #currentOperand{
+.output #currentOperand{
     color: white;
     font-size: 2.5rem;
 }
